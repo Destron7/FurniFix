@@ -1,0 +1,44 @@
+FurniFix:
+
+LOGO		Steel	Wood	Glass {resp}
+
+|LOGO 	|	|Shop	Carpenters	AboutUs	    contactUs|		|Login/Signup|		
+		Shop
+-----------------------------------------
+	Steel	Wood	Glass
+
+
+Dev -- Login / Signup {Frontend / Backend}
+Khushi -- 
+Vanraj -- Navbar
+		
+
+
+
+------------------------------------------
+
+components 
+aboutus.html
+	|- h1
+contactus.html
+	|- h1
+login.html
+	|- h1
+signup.html
+	|- h1
+
+------------------------------------------
+
+
+-- Carpenters Backend
+-- Reselling platform
+-- 
+
+------------------------------------------
+
+Links:
+
+For sending Mail: https://docs.python.org/3/library/email.html
+
+
+
