@@ -3,7 +3,8 @@ FurniFix:
 LOGO		Steel	Wood	Glass {resp}
 
 |LOGO 	|	|Shop	Carpenters	AboutUs	    contactUs|		|Login/Signup|		
-		Shop
+			
+			Shop
 -----------------------------------------
 	Steel	Wood	Glass
 
@@ -12,7 +13,6 @@ Dev -- Login / Signup {Frontend / Backend}
 Khushi -- 
 Vanraj -- Navbar
 		
-
 
 
 ------------------------------------------
@@ -39,6 +39,4 @@ signup.html
 Links:
 
 For sending Mail: https://docs.python.org/3/library/email.html
-
-
 
