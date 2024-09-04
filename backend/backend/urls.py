@@ -17,5 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from contactus.views import *
 
-urlpatterns = [path("admin/", admin.site.urls), path("", include("apis.urls"))]
+# from django.conf.urls import url
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("contactus/", ReactView.as_view(), name="contactus"),
+]
