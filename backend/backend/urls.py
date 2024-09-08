@@ -18,10 +18,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from contactus.views import *
+from debug_toolbar.toolbar import debug_toolbar_urls
 
 # from django.conf.urls import url
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("contactus/", ReactView.as_view(), name="contactus"),
-]
+] + debug_toolbar_urls()
