@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Carpainter = () => {
+const Carpenter = () => {
   return (
     <div>Carpainter</div>
   )
 }
 
-export default Carpainter
+export default Carpenter

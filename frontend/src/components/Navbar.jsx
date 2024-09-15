@@ -5,7 +5,7 @@ import "./navbar.css"; // Ensure this file contains your custom CSS
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="container">
+      <div className="container1">
         <Link to="/" className="navbar-brand">
           <img
             src="image/Home_Page-Images/hh 02.png"
@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link className="nav-link" to="/shop">Shop</Link>
               </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/carpainter">Carpainter</Link>
+              <Link className="nav-link" to="/carpainter">Carpenter</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/restoration">Restoration</Link>

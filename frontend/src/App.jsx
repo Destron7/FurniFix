@@ -8,7 +8,7 @@ import Services from './components/Services'; // Services component
 import Contactus from './components/Contactus'; // Contact Us component
 import Login from './components/Login'; // Login component
 import Shop from './components/Shop'; // Shop component
-import Carpainter from './components/Carpainter'; // Carpainter component
+import Carpenter from './components/Carpenter'; // Carpainter component
 import Restoration from './components/Restoration'; // Restoration component
 import Logout from './components/Logout'; // Logout component
 import Steel from './components/Steel'; // Steel category component
@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} /> {/* Home route */}
         <Route path="/aboutus" element={<Aboutus />} /> {/* About Us route */}
         <Route path="/services" element={<Services />} /> {/* Services route */}
-        <Route path="/carpainter" element={<Carpainter />} /> {/* Carpainter route */}
+        <Route path="/carpenter" element={<Carpenter />} /> {/* Carpainter route */}
         <Route path="/restoration" element={<Restoration />} /> {/* Restoration route */}
         <Route path="/shop" element={<Shop />} /> {/* Shop route */}
         <Route path="/shop/steel" element={<Steel />} /> {/* Steel category route */}
