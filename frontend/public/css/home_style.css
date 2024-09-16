@@ -1,30 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  /* Custom styles for carousel controls */
+
   .carousel-control-prev,
   .carousel-control-next {
     width: 5%;
-    /* Adjust the width as needed */
+
     text-align: center;
   }
 
-  /* Position the "prev" control at the left end */
+
   .carousel-control-prev {
     left: 0;
   }
 
-  /* Position the "next" control at the right end */
+
   .carousel-control-next {
     right: 0;
   }
 
-  /* Adjust the icon size if needed */
+  
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 2rem;
-    /* Adjust the size as needed */
     height: 2rem;
   }
   .owl-next {

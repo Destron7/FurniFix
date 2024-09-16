@@ -16,6 +16,7 @@ import Wood from './components/Wood'; // Wood category component
 import Glass from './components/Glass'; // Glass category component
 import { Login } from './pages/auth/Login';
 import { SignUp } from './pages/auth/SignUp';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/logout" element={<Logout />} /> {/* Logout route */}
         <Route path="/signup" element={<SignUp />} /> {/* Signup route */}
       </Routes>
+      <Footer/>
     </>
   );
 }

@@ -38,6 +38,7 @@ export const Login = () => {
     };
 
     return (
+        <div className="custom-form-page">
         <section className="main-form">
             <div className="background">
                 <div className="shape"></div>
@@ -54,7 +55,7 @@ export const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" placeholder="Password" id="passwordInp" value={password} onChange={(e) => setPassword(e.target.value)} ref={passwordInputRef} />
                     <button type="button" id="eye-button" onClickCapture={revealPassword} ref={eyeButtonRef}>
-                        <img src={eye} alt="" id="eye-img" />
+                        <img src={eye} alt="" id="eye-img"/>
                     </button>
                 </div>
 
@@ -63,11 +64,12 @@ export const Login = () => {
                 <label id="noAcct">Don&apos;t have a account? <Link to="/signup">Create Account</Link></label>
 
                 <div className="logos">
-                    <Link onClick={() => handleClickFacebook()}><img src={fimg} alt="facebook" /></Link>
-                    <Link onClick={() => handleClickGoogle()}><img src={gimg} alt="google"></img></Link>
-                    <Link className="githubl" onClick={() => handleClickGit()}><img src={github} alt="github" /></Link>
+                    <Link onClick={() => handleClickFacebook()}><img src={fimg} alt="facebook" className='img1' /></Link>
+                    <Link onClick={() => handleClickGoogle()}><img src={gimg} alt="google" className='img1'></img></Link>
+                    <Link className="githubl" onClick={() => handleClickGit()}><img src={github} alt="github" className='img1'/></Link>
                 </div>
             </form>
         </section>
+        </div>
     );
 }

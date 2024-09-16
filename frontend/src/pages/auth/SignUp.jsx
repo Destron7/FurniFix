@@ -23,6 +23,7 @@ export const SignUp = () => {
     };
 
     return (
+        <div className="custom-form-page">
         <section className="main-form">
             <form onSubmit={handleSubmit}>
                 <h3>Signup Form</h3>
@@ -74,5 +75,6 @@ export const SignUp = () => {
                 </label>
             </form>
         </section>
+        </div>
     );
 };

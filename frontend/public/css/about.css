@@ -1,0 +1,285 @@
+
+.custom-container .container {
+    font-family: Arial, sans-serif;
+    color: #2B2E4A;
+    background-color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+    /* overflow: hidden; */
+    animation: custom-container-fadeIn 1.2s ease-in-out;
+}
+
+@keyframes custom-container-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.custom-container .heroSection {
+    position: relative;
+    background-image: url('../image/About/aboutbg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-container .heroSection:hover {
+    transform: scale(1.02);
+}
+
+.custom-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-container .heroTitle {
+    position: relative;
+    font-size: 48px;
+    color: black;
+    margin: 0;
+    z-index: 1;
+    animation: custom-container-slideInLeft 1s ease-out;
+    right: 300px;
+}
+
+@keyframes custom-container-slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.custom-container .heroSubtitle {
+    position: relative;
+    font-size: 24px;
+    margin: 10px 0 0;
+    z-index: 1;
+    color: black;
+    animation: custom-container-slideInRight 1s ease-out;
+    right: 300px;
+}
+
+@keyframes custom-container-slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.custom-container .gridSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 60px;
+    opacity: 0;
+    animation: custom-container-fadeInUp 1.5s ease-in-out forwards;
+}
+
+@keyframes custom-container-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.custom-container .gridItem {
+    padding: 20px;
+    background-color: rgb(255, 252, 247);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-container .gridItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-container .sectionTitle {
+    font-size: 28px;
+    color: #1C1E32;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-container .sectionTitle:hover {
+    color: #F77D0A;
+}
+
+.custom-container .sectionText {
+    font-size: 18px;
+    color: #2B2E4A;
+    text-align: center;
+}
+
+.custom-container .featuresSection {
+    margin-top: 60px;
+    opacity: 0;
+    animation: custom-container-fadeInUp 1.8s ease-in-out forwards;
+}
+
+.custom-container .sectionTitleCenter {
+    font-size: 28px;
+    color: #1C1E32;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-container .sectionTitleCenter:hover {
+    color: #F77D0A;
+}
+
+.custom-container .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.custom-container .featureItem {
+    padding: 20px;
+    background-color: rgb(255, 252, 247);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.custom-container .featureItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-container .featureIcon {
+    width: 160px;
+    height: 120px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-container .img-section {
+    width: 500px;
+    height: 300px;
+}
+
+.custom-container .img-div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .custom-container .gridSection {
+        grid-template-columns: 1fr;
+    }
+    .custom-container .featuresGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .custom-container .heroTitle, .custom-container .heroSubtitle {
+        font-size: 32px;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-container .heroSection {
+        padding: 80px 20px;
+        height: auto;
+    }
+    .custom-container .heroTitle {
+        font-size: 28px;
+    }
+    .custom-container .heroSubtitle {
+        font-size: 18px;
+    }
+    .custom-container .gridSection {
+        margin-top: 40px;
+    }
+    .custom-container .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-container .heroTitle {
+        font-size: 24px;
+    }
+    .custom-container .heroSubtitle {
+        font-size: 16px;
+    }
+    .custom-container .sectionTitle {
+        font-size: 24px;
+    }
+    .custom-container .sectionText {
+        font-size: 16px;
+    }
+    .custom-container .featuresGrid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .custom-container .img-section {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.custom-container .team-swiper-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-container .team-member-card {
+    padding: 20px;
+    background: #f4f5f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-container .team-member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.custom-container .team-member-card h3 {
+    margin: 10px 0 5px;
+    color: #1c1e32; 
+}
+
+.custom-container .team-member-card p {
+    color: #2b2e4a; 
+}
