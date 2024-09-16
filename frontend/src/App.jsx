@@ -1,12 +1,12 @@
 // App.js
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Navbar component
 import Home from './components/Home'; // Home component
 import Aboutus from './components/Aboutus'; // About Us component
 import Services from './components/Services'; // Services component
-import Contactus from './components/Contactus'; // Contact Us component
-import Login from './components/Login'; // Login component
+import Contactus from './components/ContactUs'; // Contact Us component
 import Shop from './components/Shop'; // Shop component
 import Carpainter from './components/Carpainter'; // Carpainter component
 import Restoration from './components/Restoration'; // Restoration component
@@ -14,6 +14,8 @@ import Logout from './components/Logout'; // Logout component
 import Steel from './components/Steel'; // Steel category component
 import Wood from './components/Wood'; // Wood category component
 import Glass from './components/Glass'; // Glass category component
+import { Login } from './pages/auth/Login';
+import { SignUp } from './pages/auth/SignUp';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path="/contactus" element={<Contactus />} /> {/* Contact Us route */}
         <Route path="/login" element={<Login />} /> {/* Login route */}
         <Route path="/logout" element={<Logout />} /> {/* Logout route */}
+        <Route path="/signup" element={<SignUp />} /> {/* Signup route */}
       </Routes>
     </>
   );

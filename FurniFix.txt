@@ -2,12 +2,18 @@ FurniFix:
 
 LOGO		Steel	Wood	Glass {resp}
 
-|LOGO 	|	|Shop	Carpenters	AboutUs	    contactUs|		|Login/Signup|		
+|LOGO 	|	|Shop	Carpenters	AboutUs	    contactUs	Resell|		|Login/Signup|		
 			
 			Shop
 -----------------------------------------
 	Steel	Wood	Glass
 
+
+Resell --> Photo Drop
+			|-Name
+			|-Description
+			|-Price
+			|-Refer EBAY portal for the reference		
 
 Dev -- Login / Signup {Frontend / Backend}
 Khushi -- 

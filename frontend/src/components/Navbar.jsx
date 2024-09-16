@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css"; // Ensure this file contains your custom CSS
 
@@ -16,9 +15,9 @@ const Navbar = () => {
 
         <div className="navbar-menu">
           <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link" to="/shop">Shop</Link>
-              </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/shop">Shop</Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/carpainter">Carpainter</Link>
             </li>

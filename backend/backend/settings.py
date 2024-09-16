@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    # remove at time of production
     "debug_toolbar",
     # "cors",
     "corsheaders",
