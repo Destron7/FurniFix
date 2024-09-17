@@ -28,7 +28,7 @@ const testimonials = [
   }
 ];
 
-const Testimonials= () => {
+const Testimonials = () => {
   return (
     <div className="testimonial-carousel">
       <OwlCarousel
