@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_bcrypt",
     "authentication",
+    "contactus",
 ]
-
 
 
 MIDDLEWARE = [
